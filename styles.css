@@ -116,17 +116,31 @@ header h1 {
 /* Breadcrumb Styles */
 .breadcrumb {
   padding: 10px;
-  background-color: #f1f1f1;
+  background-color: #f1f1f1; /* Light mode background */
   margin-bottom: 20px;
 }
 
 .breadcrumb a {
   text-decoration: none;
-  color: #0077b5;
+  color: #0077b5; /* Light mode link color */
 }
 
 .breadcrumb a:hover {
   text-decoration: underline;
+}
+
+/* Dark Mode Styles for Breadcrumb */
+body.dark-mode .breadcrumb {
+  background-color: #1e1e1e; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+body.dark-mode .breadcrumb a {
+  color: #4dabf7; /* Dark mode link color */
+}
+
+body.dark-mode .breadcrumb a:hover {
+  color: #6bc2ff; /* Dark mode link hover color */
 }
 
 /* Project Details Styles */
