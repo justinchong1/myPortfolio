@@ -6,7 +6,7 @@ const unlockButton = document.getElementById('unlock-button');
 const errorMessage = document.getElementById('error-message');
 
 // Set your password here
-const correctPassword = 'mysecretpassword';
+const correctPassword = '1234';
 
 unlockButton.addEventListener('click', () => {
   const enteredPassword = passwordInput.value;
@@ -32,8 +32,8 @@ darkModeToggle.addEventListener('click', () => {
 
   // Change the icon based on the mode
   if (body.classList.contains('dark-mode')) {
-    darkModeToggle.textContent = '☀️ Light Mode'; // Sun icon for light mode
+    darkModeToggle.textContent = '☀️'; // Sun icon for light mode
   } else {
-    darkModeToggle.textContent = '🌙 Night Mode'; // Moon icon for dark mode
+    darkModeToggle.textContent = '🌙'; // Moon icon for dark mode
   }
 });
