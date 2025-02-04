@@ -1,78 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="theme-toggle">
-        <i class="fas fa-moon"></i>
-    </button>
-    <div class="container">
-        <header>
-            <h1>Welcome to My Portfolio</h1>
-        </header>
-        <section class="grid">
-            <div class="profile">
-                <img src="profile1.jpg" alt="Profile Picture 1">
-                <p>Hi! I'm [Name], a passionate [Profession].</p>
-            </div>
-            <div class="profile">
-                <img src="profile2.jpg" alt="Profile Picture 2">
-                <p>Welcome to my creative space!</p>
-            </div>
-            <div class="profile">
-                <img src="profile3.jpg" alt="Profile Picture 3">
-                <p>Exploring the world of [Field of Work].</p>
-            </div>
-            <div class="profile">
-                <img src="profile4.jpg" alt="Profile Picture 4">
-                <p>Let's create something amazing!</p>
-            </div>
-            <div class="profile">
-                <img src="profile5.jpg" alt="Profile Picture 5">
-                <p>Innovating and designing solutions.</p>
-            </div>
-            <div class="profile">
-                <img src="profile6.jpg" alt="Profile Picture 6">
-                <p>Passionate about technology and design.</p>
-            </div>
-            <div class="profile">
-                <img src="profile7.jpg" alt="Profile Picture 7">
-                <p>Striving for excellence in every project.</p>
-            </div>
-            <div class="profile">
-                <img src="profile8.jpg" alt="Profile Picture 8">
-                <p>Always learning, always growing.</p>
-            </div>
-            <div class="profile">
-                <img src="profile9.jpg" alt="Profile Picture 9">
-                <p>Bringing ideas to life through design.</p>
-            </div>
-        </section>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <button id="dark-mode-toggle">🌙</button>
+  </header>
+
+  <main>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Project 1">
+        <p>Description of Project 1</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Project 2">
+        <p>Description of Project 2</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Project 3">
+        <p>Description of Project 3</p>
+      </div>
+      <!-- Add more cards as needed -->
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const toggleButton = document.getElementById('theme-toggle');
-            const icon = toggleButton.querySelector('i');
-            
-            if (toggleButton) {
-                toggleButton.addEventListener('click', () => {
-                    document.body.classList.toggle('dark-mode');
-                    
-                    if (document.body.classList.contains('dark-mode')) {
-                        icon.classList.remove('fa-moon');
-                        icon.classList.add('fa-sun');
-                    } else {
-                        icon.classList.remove('fa-sun');
-                        icon.classList.add('fa-moon');
-                    }
-                });
-            }
-        });
-    </script>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+      <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
