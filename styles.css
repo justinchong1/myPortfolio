@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Container Styling */
 .container {
     max-width: 1000px;
     margin: 50px auto;
@@ -16,10 +18,13 @@ body {
     border-radius: 10px;
 }
 
+/* Header Styling */
 header h1 {
     color: #333;
+    transition: color 0.3s;
 }
 
+/* Grid Layout */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -27,6 +32,7 @@ header h1 {
     padding: 24px;
 }
 
+/* Profile Card */
 .profile {
     background: #fff;
     padding: 16px;
@@ -43,6 +49,23 @@ header h1 {
     font-size: 16px;
     color: #666;
     margin-top: 8px;
+}
+
+/* Toggle Button Styling */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #333;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
 }
 
 /* Dark Mode Styles */
@@ -64,22 +87,10 @@ header h1 {
     color: #ddd;
 }
 
-#theme-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.dark-mode h1 {
+    color: white;
 }
 
-#theme-toggle:hover {
-    transform: scale(1.1);
-}
-
-/* Optional: Change icon when in dark mode */
 .dark-mode #theme-toggle {
-    content: "☀️";
+    color: white;
 }
