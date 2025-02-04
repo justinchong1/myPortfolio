@@ -1,3 +1,35 @@
+/* Password Section Styles */
+#password-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#password-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#unlock-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#unlock-button:hover {
+  background-color: #005f8a;
+}
+
+#error-message {
+  margin-top: 10px;
+}
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -89,34 +121,3 @@ footer.dark-mode {
   text-decoration: underline;
 }
 
-/* Password Section Styles */
-#password-section {
-  text-align: center;
-  margin-top: 40px;
-}
-
-#password-input {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#unlock-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #0077b5;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-#unlock-button:hover {
-  background-color: #005f8a;
-}
-
-#error-message {
-  margin-top: 10px;
-}
