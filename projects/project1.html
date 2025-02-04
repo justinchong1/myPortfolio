@@ -7,16 +7,88 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <!-- Breadcrumb -->
-  <div class="breadcrumb">
-    <a href="../index.html">Home</a> &gt; Project 1
+  <!-- Password Section -->
+  <div id="password-section">
+    <input type="password" id="password-input" placeholder="Enter password">
+    <button id="unlock-button">Unlock</button>
+    <p id="error-message" style="color: red; display: none;">Incorrect password. Try again.</p>
   </div>
 
-  <!-- Project Details -->
-  <div class="project-details">
-    <h1>Project 1</h1>
-    <img src="../images/project1.jpg" alt="Project 1">
-    <p>Detailed description of Project 1. This is where you can provide more information about the project, including goals, technologies used, and outcomes.</p>
+  <!-- Content Section -->
+  <div id="content-section" style="display: none;">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> &gt; Project 1
+    </div>
+
+    <!-- Project Details -->
+    <div class="project-details">
+      <h1>Project 1</h1>
+      <img src="../images/project1.jpg" alt="Project 1">
+      <p>Detailed description of Project 1. This is where you can provide more information about the project, including goals, technologies used, and outcomes.</p>
+    </div>
   </div>
+
+  <script>
+    // Password Protection
+    const passwordSection = document.getElementById('password-section');
+    const contentSection = document.getElementById('content-section');
+    const passwordInput = document.getElementById('password-input');
+    const unlockButton = document.getElementById('unlock-button');
+    const errorMessage = document.getElementById('error-message');
+
+    // Set your password here
+    const correctPassword = 'mysecretpassword';
+
+    // Check if the user has already unlocked the website
+    if (sessionStorage.getItem('unlocked') === 'true') {
+      passwordSection.style.display = 'none';
+      contentSection.style.display = 'block';
+    }
+
+    unlockButton.addEventListener('click', () => {
+      const enteredPassword = passwordInput.value;
+
+      if (enteredPassword === correctPassword) {
+        // Hide password section and show content
+        passwordSection.style.display = 'none';
+        contentSection.style.display = 'block';
+
+        // Store the unlocked state in session storage
+        sessionStorage.setItem('unlocked', 'true');
+      } else {
+        // Show error message
+        errorMessage.style.display = 'block';
+      }
+    });
+
+    // Dark Mode Toggle
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const footer = document.querySelector('footer');
+
+    // Check local storage for dark mode preference
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+      body.classList.add('dark-mode');
+      footer.classList.add('dark-mode');
+      darkModeToggle.textContent = '☀️'; // Sun icon for light mode
+    } else {
+      darkModeToggle.textContent = '🌙'; // Moon icon for dark mode
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      footer.classList.toggle('dark-mode');
+
+      // Change the icon based on the mode
+      if (body.classList.contains('dark-mode')) {
+        darkModeToggle.textContent = '☀️'; // Sun icon for light mode
+        localStorage.setItem('dark-mode', 'enabled'); // Save dark mode preference
+      } else {
+        darkModeToggle.textContent = '🌙'; // Moon icon for dark mode
+        localStorage.setItem('dark-mode', 'disabled'); // Save light mode preference
+      }
+    });
+  </script>
 </body>
 </html>
