@@ -98,6 +98,62 @@ header h1 {
   margin: 10px 0 0;
 }
 
+/* Card Link Styles */
+.card-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
+.card-link:hover .card {
+  transform: scale(1.05); /* Add hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0077b5;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Project Details Styles */
+.project-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-details img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project-details h1 {
+  margin-bottom: 20px;
+}
+
+.project-details p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 /* Footer Styles */
 footer {
   text-align: center;
