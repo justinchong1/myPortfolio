@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
     background: white;
@@ -19,13 +19,27 @@ header h1 {
     color: #333;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 24px;
+}
+
+.profile {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .profile img {
-    width: 150px;
-    border-radius: 50%;
-    margin: 20px 0;
+    width: 100%;
+    border-radius: 8px;
 }
 
 .profile p {
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
+    margin-top: 8px;
 }
