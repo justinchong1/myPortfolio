@@ -65,17 +65,21 @@ header h1 {
 }
 
 #theme-toggle {
-    margin: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
     border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    transition: background-color 0.3s;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 #theme-toggle:hover {
-    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Optional: Change icon when in dark mode */
+.dark-mode #theme-toggle {
+    content: "☀️";
 }
