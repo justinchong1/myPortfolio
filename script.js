@@ -1,19 +1,3 @@
-const darkModeToggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
-const footer = document.querySelector('footer');
-
-darkModeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  footer.classList.toggle('dark-mode');
-
-  // Change the icon based on the mode
-  if (body.classList.contains('dark-mode')) {
-    darkModeToggle.textContent = '☀️'; // Sun icon for light mode
-  } else {
-    darkModeToggle.textContent = '🌙'; // Moon icon for dark mode
-  }
-});
-
 // Password Protection
 const passwordSection = document.getElementById('password-section');
 const contentSection = document.getElementById('content-section');
@@ -22,7 +6,7 @@ const unlockButton = document.getElementById('unlock-button');
 const errorMessage = document.getElementById('error-message');
 
 // Set your password here
-const correctPassword = '1234';
+const correctPassword = 'mysecretpassword';
 
 unlockButton.addEventListener('click', () => {
   const enteredPassword = passwordInput.value;
@@ -48,8 +32,8 @@ darkModeToggle.addEventListener('click', () => {
 
   // Change the icon based on the mode
   if (body.classList.contains('dark-mode')) {
-    darkModeToggle.textContent = '☀️'; // Sun icon for light mode
+    darkModeToggle.textContent = '☀️ Light Mode'; // Sun icon for light mode
   } else {
-    darkModeToggle.textContent = '🌙'; // Moon icon for dark mode
+    darkModeToggle.textContent = '🌙 Night Mode'; // Moon icon for dark mode
   }
 });
