@@ -22,7 +22,7 @@ const unlockButton = document.getElementById('unlock-button');
 const errorMessage = document.getElementById('error-message');
 
 // Set your password here
-const correctPassword = 'mysecretpassword';
+const correctPassword = '1234';
 
 unlockButton.addEventListener('click', () => {
   const enteredPassword = passwordInput.value;
