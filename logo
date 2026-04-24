@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="300" fill="#c5c5e8"/>
+  
+  <!-- Pea pod shape -->
+  <path d="M 120 80 Q 140 60 170 70 Q 200 80 210 110 Q 220 140 210 170 Q 200 200 180 220 Q 160 240 140 245 Q 120 250 105 235 Q 90 220 85 200 Q 80 180 80 160 Q 80 140 85 120 Q 90 100 105 90 Q 112 85 120 80 Z" 
+        fill="#2929d4" 
+        stroke="none"/>
+  
+  <!-- Peas inside pod -->
+  <circle cx="155" cy="115" r="14" fill="#c5c5e8"/>
+  <circle cx="165" cy="150" r="14" fill="#c5c5e8"/>
+  <circle cx="155" cy="185" r="14" fill="#c5c5e8"/>
+  
+  <!-- Dots below pod -->
+  <circle cx="240" cy="235" r="12" fill="#2929d4"/>
+  <circle cx="285" cy="265" r="8" fill="#2929d4"/>
+  
+  <!-- Text: legume -->
+  <text x="360" y="220" 
+        font-family="Arial, sans-serif" 
+        font-size="140" 
+        font-weight="700" 
+        fill="#1a1a3e" 
+        letter-spacing="-2">legume</text>
+</svg>
